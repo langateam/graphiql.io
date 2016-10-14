@@ -1,0 +1,51 @@
+{
+  "name": "graphiql-multi",
+  "version": "0.0.0",
+  "description": "Connect GraphiQL with any server",
+  "homepage": "graphiql.io",
+  "author": {
+    "name": "Langa",
+    "email": "hello@langa.io",
+    "url": "langa.io"
+  },
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "graphiql",
+    "server",
+    "trails",
+    "trailsjs"
+  ],
+  "dependencies": {
+    "graphiql": "^0.7.8",
+    "inert": "^4.0.2",
+    "trailpack-core": "^1.0.0-beta-3",
+    "trailpack-hapi": "^1.0.4",
+    "trailpack-repl": "^1.0.0-beta-3",
+    "trailpack-router": "^1.0.0-beta-4",
+    "trailpack-webpack": "0.0.5",
+    "trails": "^1.0.0-beta-1",
+    "trails-controller": "^1.0.0-beta-2",
+    "trails-model": "^1.0.0-beta-2",
+    "trails-policy": "^1.0.1",
+    "trails-service": "1.0.0-beta-2",
+    "winston": "^2.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.8",
+    "eslint-config-trails": "latest",
+    "mocha": "^2.4",
+    "supertest": "^1.2"
+  },
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "git@github.com:langateam/graphiql-multi.git",
+  "license": "MIT"
+}
