@@ -1,8 +1,8 @@
 {
-  "name": "graphiql-multi",
+  "name": "graphiql.io",
   "version": "0.0.0",
-  "description": "Connect GraphiQL with any server",
-  "homepage": "graphiql.io",
+  "description": "graphiql.io: Connect GraphiQL to any server",
+  "homepage": "http://graphiql.io",
   "author": {
     "name": "Langa",
     "email": "hello@langa.io",
@@ -14,21 +14,27 @@
     "graphiql",
     "server",
     "trails",
-    "trailsjs"
+    "trailsjs",
+    "graphiql.io"
   ],
   "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "fetch": "^1.1.0",
+    "file-loader": "^0.9.0",
     "graphiql": "^0.7.8",
+    "html-webpack-plugin": "^2.22.0",
     "inert": "^4.0.2",
     "trailpack-core": "^1.0.0-beta-3",
     "trailpack-hapi": "^1.0.4",
     "trailpack-repl": "^1.0.0-beta-3",
     "trailpack-router": "^1.0.0-beta-4",
-    "trailpack-webpack": "0.0.5",
+    "trailpack-webpack": "^1.0.0",
     "trails": "^1.0.0-beta-1",
     "trails-controller": "^1.0.0-beta-2",
     "trails-model": "^1.0.0-beta-2",
     "trails-policy": "^1.0.1",
     "trails-service": "1.0.0-beta-2",
+    "url-loader": "^0.5.7",
     "winston": "^2.2"
   },
   "devDependencies": {
@@ -44,7 +50,20 @@
     "node": ">= 4.0.0"
   },
   "eslintConfig": {
-    "extends": "trails"
+    "extends": "trails",
+    "plugins": [
+      "react"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
   },
   "repository": "git@github.com:langateam/graphiql-multi.git",
   "license": "MIT"

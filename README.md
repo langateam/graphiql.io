@@ -1,2 +1,3 @@
-# graphiql-multi
-Connect GraphiQL to any server
+# graphiql.io
+
+Connect GraphiQL to any server.

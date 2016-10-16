@@ -19,7 +19,8 @@ module.exports = {
     require('trailpack-core'),
     require('trailpack-repl'),
     require('trailpack-router'),
-    require('trailpack-hapi')
+    require('trailpack-hapi'),
+    require('trailpack-webpack')
   ],
 
   /**
