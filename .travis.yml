@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 6
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: hello@langa.io
+  api_key:
+    secure: B5gQLva/0UJySLPWpauuIq1BZYf9v33i6WThR6dYR9ta3F1cf0zJWmp0pEJWtGRYU1ZUCxp9x67AwAI3O73FhN46BaNo9AP3Ncmc1AQI5iddyxTwnPZCfv19kEUUI2R/DsThkGDrDc+a/cJxwE6VVWoOjed5K8YbKuYf7Amab5KKPomkMdUy6jPfezNQcXK2gV7yFFMP4AtbghrjnuBIN/rsDI29kw9JH1ox4lQJIWK+1YltpUJJR7WIKYJH3jbHL5xWz7b7azS3lQdXVRQ1cujZ3lbdhYo9tF71jTKk9yztfCDcjIjcAOyGvb/OodXJcPZSgC8rctO1oJBi6YMxhTGqPUW2wHTFSO2yh4eHr06/cLI7qgfp36FCfUyPwuOiR4noO9RNNSFAa5nRgwGkHTpZ0brHc1a3MKmwg6q6zetEv7tVgD3XBBUS6WmsFyohhBR/e+3M3X8lqFODOWbAYM+rW0psVvVgIvQ1OvF5SPgyoXjR480eN7mEmQRzhMN3rduxOD6T1bA05VmT7Zzyg0scc61SkqlGhMnK8Phyw0uK/Zsx5ibkUlo13HMdFMYiJCS0vum9vd7FW/9qeJ7AYZRtsuUquzcF2kCkA/egIqXjyKQ0Bz2eN1PWydgjVSaBlW6Ae/KGCkjVpxKvcUsXRw6Q2FVdOJNFiRbYLV7baGA=
+  on:
+    tags: true
+    repo: langateam/graphiql.io
