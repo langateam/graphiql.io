@@ -20,7 +20,8 @@ module.exports = {
     require('trailpack-repl'),
     require('trailpack-router'),
     require('trailpack-hapi'),
-    require('trailpack-webpack')
+    require('trailpack-webpack'),
+    require('trailpack-autoreload')
   ],
 
   /**
@@ -29,5 +30,8 @@ module.exports = {
   paths: {
     root: path.resolve(__dirname, '..'),
     temp: path.resolve(__dirname, '..', '.tmp')
-  }
+  },
+
+  freezeConfig: false
+
 }

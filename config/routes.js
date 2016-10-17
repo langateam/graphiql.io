@@ -34,8 +34,14 @@ module.exports = [
     path: '/public/{param*}',
     handler: {
       directory: {
-        path: 'public'
+        path: '.tmp/public'
       }
     }
+  },
+
+  {
+    method: 'POST',
+    path: '/graphql',
+    handler: 'GraphqlController.graphql'
   }
 ]

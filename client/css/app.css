@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#app-root, #app-root > div {
+  height: 100%;
+}
+
+#top-bar {
+  height: 48px;
+}
+
+#title-text {
+
+}
+
+#url-input {
+  height: 32px;
+  width: 320px;
+  padding: 0 4px 0 4px;
+  font-size: 1.0em;
+}
+
+.graphiql-container {
+  height: 100%;
+}

@@ -7,13 +7,14 @@ module.exports = {
     './client/js/app.js'
   ],
   output: {
-    path: './public',
+    path: './.tmp/public',
     filename: 'app.js',
     publicPath: ''
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Trails Application'
+      title: 'Trails Application',
+      template: 'client/index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
@@ -21,10 +22,16 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
+      loader: 'babel-loader',
+      include: /client/,
       exclude: /node_modules/,
       query: {
-        presets: [ 'react', 'es2015', 'stage-0' ]
+        presets: [
+          require.resolve('babel-preset-react'),
+          require.resolve('babel-preset-es2015'),
+          require.resolve('babel-preset-stage-0')
+        ],
+        plugins: [ ]
       }
     }, {
       test: /\.css$/,
