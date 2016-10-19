@@ -1,6 +1,6 @@
 {
   "name": "graphiql.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "graphiql.io: Connect GraphiQL to any server",
   "homepage": "http://graphiql.io",
   "author": {
