@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:6.8.1
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
@@ -11,7 +11,7 @@ RUN apt-get install yarn -y
 
 RUN wget -O graphiql.io.tar https://github.com/langateam/graphiql.io/tarball/master
 RUN tar --strip-components=1 -xf graphiql.io.tar
-RUN npm install
+RUN yarn
 
 EXPOSE 3000
 CMD [ "node", "server.js" ]
