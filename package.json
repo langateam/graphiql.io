@@ -73,7 +73,7 @@
       }
     }
   },
-  "babel": { },
+  "babel": {},
   "repository": "git@github.com:langateam/graphiql-multi.git",
   "license": "MIT"
 }
