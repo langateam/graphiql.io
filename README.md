@@ -36,9 +36,9 @@ MIT
 
 [docker-image]: https://img.shields.io/badge/Docker-langa/graphiql.io-1aaaf8.svg?style=flat-square
 [docker-url]: https://hub.docker.com/r/langa/graphiql.io/
-[npm-image]: https://img.shields.io/npm/v/waterline-postgresql.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/waterline-postgresql.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/waterline-postgresql
-[ci-image]: https://img.shields.io/travis/langateam/graphiql.io/master.svg?style=flat
+[ci-image]: https://img.shields.io/travis/langateam/graphiql.io/master.svg?style=flat-square
 [ci-url]: https://travis-ci.org/langateam/graphiql.io
-[codeclimate-image]: https://img.shields.io/codeclimate/github/langateam/graphiql.io.svg?style=flat
+[codeclimate-image]: https://img.shields.io/codeclimate/github/langateam/graphiql.io.svg?style=flat-square
 [codeclimate-url]: https://codeclimate.com/github/langateam/graphiql.io
