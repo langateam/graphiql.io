@@ -27,6 +27,7 @@
     "react-dom": "^15.3.2",
     "trailpack-autoreload": "^1.0.2",
     "trailpack-core": "^1.0.0-beta-3",
+    "trailpack-graphql": "^0.9.0",
     "trailpack-hapi": "^1.0.4",
     "trailpack-repl": "^1.0.0-beta-3",
     "trailpack-router": "^1.0.0-beta-4",
