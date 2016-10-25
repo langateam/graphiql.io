@@ -22,6 +22,7 @@
     "graphiql": "^0.7.8",
     "graphql": "^0.7.2",
     "inert": "^4.0.2",
+    "lodash": "^4.16.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "trailpack-autoreload": "^1.0.2",

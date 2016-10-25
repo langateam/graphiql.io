@@ -1,6 +1,15 @@
 language: node_js
 node_js:
-- 6
+  - 6
+
+sudo: required
+services:
+  - docker
+
+after_success:
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERAME" -p="$DOCKER_PASSWORD"
+  - docker build -t langa/graphiql.io
+
 notifications:
   email: false
 deploy:

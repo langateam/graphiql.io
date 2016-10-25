@@ -1,5 +1,6 @@
 exports.database = require('./database')
 exports.env = require('./env')
+exports.graphql = require('./graphql')
 exports.i18n = require('./i18n')
 exports.log = require('./log')
 exports.main = require('./main')

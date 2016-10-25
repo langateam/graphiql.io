@@ -24,6 +24,6 @@ module.exports = [
   {
     method: 'POST',
     path: '/graphql',
-    handler: 'GraphqlController.graphql'
+    handler: 'GraphqlController.query'
   }
 ]

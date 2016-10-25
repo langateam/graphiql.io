@@ -21,7 +21,8 @@ module.exports = {
     require('trailpack-router'),
     require('trailpack-hapi'),
     require('trailpack-webpack'),
-    require('trailpack-autoreload')
+    require('trailpack-autoreload'),
+    require('trailpack-graphql')
   ],
 
   /**
