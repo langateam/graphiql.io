@@ -2,6 +2,7 @@
 
 const Model = require('trails-model')
 const faker = require('faker')
+const _ = require('lodash')
 
 /**
  * @module Company
@@ -28,6 +29,7 @@ module.exports = class Company extends Model {
 
       type CompanyQuery {
         findOne: Company
+        findAll (count: Int!): [Company]
       }
     `
   }
@@ -36,6 +38,9 @@ module.exports = class Company extends Model {
     return {
       findOne () {
         return new Company(app)
+      },
+      findAll ({ count }) {
+        return _.range(0, count).map(i => new Company(app))
       }
     }
   }
