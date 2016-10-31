@@ -31,7 +31,10 @@ module.exports = class Address extends Model {
       }
 
       type AddressQuery {
+        # Return a single address
         findOne: Address
+
+        # Return a list of addresses; list length is given by "count"
         findAll (count: Int!): [Address]
       }
     `

@@ -17,6 +17,8 @@ module.exports = class Company extends Model {
 
   static schema (graphql) {
     return graphql`
+
+      # Company type
       type Company {
         companyName: String
         catchPhrase: String
@@ -40,6 +42,14 @@ module.exports = class Company extends Model {
 
   get companyName () {
     return faker.company.companyName()
+  }
+
+  get catchPhrase () {
+    return faker.company.catchPhrase()
+  }
+
+  get suffixes () {
+    return faker.company.suffixes()
   }
 
   bs () {
