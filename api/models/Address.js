@@ -30,20 +30,19 @@ module.exports = class Address extends Model {
         longitude: Float
       }
 
-      # Allowed Queries and Parameters
-      type Query {
-        address: Address
-        addressList (count: Int): [Address]
+      type AddressQuery {
+        findOne: Address
+        findAll (count: Int!): [Address]
       }
     `
   }
 
   static resolver (app) {
     return {
-      address () {
+      findOne () {
         return new Address(app)
       },
-      addressList ({ count }) {
+      findAll ({ count }) {
         return _.range(0, count).map(i => new Address(app))
       }
     }

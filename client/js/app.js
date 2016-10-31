@@ -42,7 +42,7 @@ const App = class App extends React.Component {
     super(props)
 
     this.state = {
-      url: 'http://localhost:3000/graphql'
+      url: `${global.location.href}graphql`
     }
   }
 }
