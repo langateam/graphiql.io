@@ -5,7 +5,8 @@
 [![Build status][ci-image]][ci-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
-Use [GraphiQL](https://github.com/graphql/graphiql) with any server. Hosted at [graphiql.io](https://graphiql.io).
+Use [GraphiQL](https://github.com/graphql/graphiql) with any server. Hosted at [graphiql.io](https://graphiql.io), built with [Trails](http://trailsjs.io).
+Default data provided via [faker.js](https://github.com/marak/Faker.js/).
 
 ## Install
 
