@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: 819176664614.dkr.ecr.us-east-1.amazonaws.com/langa/graphiql.io:latest
+    image: langa/graphiql.io
     ports:
       - "80:3000"
     environment:
