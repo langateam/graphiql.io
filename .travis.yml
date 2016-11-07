@@ -7,7 +7,7 @@ notifications:
   email: false
 
 after_success:
-  - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/langa/graphiql.io/trigger/$DOCKER_TOKEN
+  - "curl -H 'Content-Type: application/json' --data '{\"build\": true}' -X POST https://registry.hub.docker.com/u/langa/graphiql.io/trigger/$DOCKER_TOKEN"
 
 env:
   global:
