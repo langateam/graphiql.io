@@ -1,8 +1,6 @@
 'use strict'
 
 const Service = require('trails-service')
-const faker = require('faker')
-const _ = require('lodash')
 
 /**
  * @module AddressService

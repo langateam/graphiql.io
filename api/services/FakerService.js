@@ -1,7 +1,6 @@
 'use strict'
 
 const Service = require('trails-service')
-const faker = require('faker')
 
 /**
  * @module FakerService

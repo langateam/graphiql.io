@@ -65,7 +65,7 @@
     "node": ">= 4.0.0"
   },
   "eslintConfig": {
-    "extends": "trails",
+    "extends": "trails/react",
     "plugins": [
       "react"
     ],
