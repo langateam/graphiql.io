@@ -1,22 +1,14 @@
 language: node_js
 node_js:
-  - 6
-
-sudo: required
-services:
-  - docker
-
-after_success:
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERAME" -p="$DOCKER_PASSWORD"
-  - docker build -t langa/graphiql.io
+- 6
+- 7
 
 notifications:
   email: false
-deploy:
-  provider: npm
-  email: hello@langa.io
-  api_key:
-    secure: B5gQLva/0UJySLPWpauuIq1BZYf9v33i6WThR6dYR9ta3F1cf0zJWmp0pEJWtGRYU1ZUCxp9x67AwAI3O73FhN46BaNo9AP3Ncmc1AQI5iddyxTwnPZCfv19kEUUI2R/DsThkGDrDc+a/cJxwE6VVWoOjed5K8YbKuYf7Amab5KKPomkMdUy6jPfezNQcXK2gV7yFFMP4AtbghrjnuBIN/rsDI29kw9JH1ox4lQJIWK+1YltpUJJR7WIKYJH3jbHL5xWz7b7azS3lQdXVRQ1cujZ3lbdhYo9tF71jTKk9yztfCDcjIjcAOyGvb/OodXJcPZSgC8rctO1oJBi6YMxhTGqPUW2wHTFSO2yh4eHr06/cLI7qgfp36FCfUyPwuOiR4noO9RNNSFAa5nRgwGkHTpZ0brHc1a3MKmwg6q6zetEv7tVgD3XBBUS6WmsFyohhBR/e+3M3X8lqFODOWbAYM+rW0psVvVgIvQ1OvF5SPgyoXjR480eN7mEmQRzhMN3rduxOD6T1bA05VmT7Zzyg0scc61SkqlGhMnK8Phyw0uK/Zsx5ibkUlo13HMdFMYiJCS0vum9vd7FW/9qeJ7AYZRtsuUquzcF2kCkA/egIqXjyKQ0Bz2eN1PWydgjVSaBlW6Ae/KGCkjVpxKvcUsXRw6Q2FVdOJNFiRbYLV7baGA=
-  on:
-    tags: true
-    repo: langateam/graphiql.io
+
+after_success:
+  - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/langa/graphiql.io/trigger/$DOCKER_TOKEN
+
+env:
+  global:
+    secure: swKuD5NRVaqDqos/Y5RRFnnr/ZOhv7Ti/pDJ+MqksUM+tfcB65Np6d6bfUj9bpLjXTWO0gvrQYAkiFLFYup+k8f8YXIPghmb86+c9rBVb7gGhztA7tXpUSysavLVgYwOxbPCA2yZvnVtOSoh+BzzBZovob61NsqQPbkUja2mw+9zaQ99tvRz1WoUzPRhh9cu97GzQcWfdj6DMqcgpWsZhA5Kktz3KBreS5P2Ukmws371ZSDVFSydQU2/cBq15OrI9EBtoQ3Q8xm+yslRLh8YfNXkKBXosyAHA+rsoNBnIT8hXB/KrXTfXiBOpI6Th7QN+vXC3zW2TlgW1ymX3PnIMdqAOcSVJTECZ2BF7P4VycQp8OmNRbLYxXx4DTUCxQC9ihpvzOgASBHGssz3FQTu+dyrRvB/RSLcYbazQxM8N8HrIBcZ8vJqM45cnLRbs4UtGfrm9WJ2AOf/WOpBR1PGT7lxytUdWVZxwIqnsQ+o8RVfsp9gW5XxZ9RhNCIoF1bt68rsy/h0Bv535am+MD4iOrnXD0L+C1waWeEkfe1zig/HPd+YG5cQrynwvT7m6FBw/68fHAmgXe7v2MZc3TT3ZCUUx5zTbNt2b8e6gJ+QkXwihH8BUl7lyFjsGYbtyh5fEG6dNb//b4PPo7tTjg7uIbE2U4ZF3zKiVNvBU03FBIE=
