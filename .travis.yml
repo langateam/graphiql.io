@@ -1,14 +1,13 @@
 language: node_js
 node_js:
 - 6
-- 7
 
 notifications:
   email: false
 
 after_success:
   - "curl -H 'Content-Type: application/json' --data '{\"build\": true}' -X POST https://registry.hub.docker.com/u/langa/graphiql.io/trigger/$DOCKER_TOKEN/"
-
+  
 env:
   global:
     secure: swKuD5NRVaqDqos/Y5RRFnnr/ZOhv7Ti/pDJ+MqksUM+tfcB65Np6d6bfUj9bpLjXTWO0gvrQYAkiFLFYup+k8f8YXIPghmb86+c9rBVb7gGhztA7tXpUSysavLVgYwOxbPCA2yZvnVtOSoh+BzzBZovob61NsqQPbkUja2mw+9zaQ99tvRz1WoUzPRhh9cu97GzQcWfdj6DMqcgpWsZhA5Kktz3KBreS5P2Ukmws371ZSDVFSydQU2/cBq15OrI9EBtoQ3Q8xm+yslRLh8YfNXkKBXosyAHA+rsoNBnIT8hXB/KrXTfXiBOpI6Th7QN+vXC3zW2TlgW1ymX3PnIMdqAOcSVJTECZ2BF7P4VycQp8OmNRbLYxXx4DTUCxQC9ihpvzOgASBHGssz3FQTu+dyrRvB/RSLcYbazQxM8N8HrIBcZ8vJqM45cnLRbs4UtGfrm9WJ2AOf/WOpBR1PGT7lxytUdWVZxwIqnsQ+o8RVfsp9gW5XxZ9RhNCIoF1bt68rsy/h0Bv535am+MD4iOrnXD0L+C1waWeEkfe1zig/HPd+YG5cQrynwvT7m6FBw/68fHAmgXe7v2MZc3TT3ZCUUx5zTbNt2b8e6gJ+QkXwihH8BUl7lyFjsGYbtyh5fEG6dNb//b4PPo7tTjg7uIbE2U4ZF3zKiVNvBU03FBIE=
