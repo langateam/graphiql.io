@@ -20,8 +20,7 @@ module.exports = {
     require('trailpack-repl'),
     require('trailpack-router'),
     require('trailpack-hapi'),
-    //require('trailpack-webpack'),
-    //require('trailpack-autoreload'),
+    require('trailpack-webpack'),
     require('trailpack-graphql')
   ],
 
