@@ -9,7 +9,7 @@ install:
     fi'
 
   - 'if [ ${USE_NPM} = "true" ]; then
-      npm install
+      npm install;
     fi'
 
 notifications:
