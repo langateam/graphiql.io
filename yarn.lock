@@ -1680,12 +1680,12 @@ eslint-config-trails@latest:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/eslint-config-trails/-/eslint-config-trails-1.0.7.tgz#b9e7bbb9236e8f48f8957f3c384c95f995f2209a"
 
-eslint-plugin-react@^6.4.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.4.1.tgz#7d1aade747db15892f71eee1fea4addf97bcfa2b"
+eslint-plugin-react@^6.6:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.6.0.tgz#91ceecefa8a22d8f5d23ef9a839516a7d9fa63a1"
   dependencies:
     doctrine "^1.2.2"
-    jsx-ast-utils "^1.3.1"
+    jsx-ast-utils "^1.3.3"
 
 eslint@^2.8:
   version "2.13.1"
@@ -1799,6 +1799,10 @@ extsprintf@1.0.2:
 eyes@0.1.x:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
+
+faker@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-3.1.0.tgz#0f908faf4e6ec02524e54a57e432c5c013e08c9f"
 
 fast-levenshtein@~2.0.4:
   version "2.0.5"
@@ -2628,9 +2632,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsx-ast-utils@^1.3.1:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.3.2.tgz#dff658782705352111f9865d40471bc4a955961e"
+jsx-ast-utils@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.3.3.tgz#ccfdbe0320ba03f7a1fc4e67ceaf7e2cc0169721"
   dependencies:
     acorn-jsx "^3.0.1"
     object-assign "^4.1.0"
@@ -2703,6 +2707,10 @@ lodash.words@^3.0.0:
 lodash@^4.0.0, lodash@^4.12.0, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.2.0, lodash@^4.3.0:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.4.tgz#01ce306b9bad1319f2a5528674f88297aeb70127"
+
+lodash@^4.16.4, lodash@^4.5.1:
+  version "4.16.6"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -4086,6 +4094,17 @@ trailpack-core@^1.0.0-beta-3:
     lodash "^4.12.0"
     trailpack "^1.0.2"
 
+trailpack-graphql@^0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/trailpack-graphql/-/trailpack-graphql-0.9.1.tgz#f5de0af1358710e64ebdb7e8572e81e3829a1e3a"
+  dependencies:
+    graphql "^0.7.2"
+    lodash "^4.5.1"
+    trailpack latest
+    trails-controller "^1.0.0-beta-2"
+    trails-model "^1.0.0-beta-2"
+    trails-service "^1.0.0-beta-2"
+
 trailpack-hapi@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/trailpack-hapi/-/trailpack-hapi-1.0.4.tgz#c76a6364be3fec9bd26c90e0368712ca548d0233"
@@ -4156,6 +4175,10 @@ trails-model@^1.0.0-beta-2:
 trails-policy@^1.0.1, trails-policy@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/trails-policy/-/trails-policy-1.0.2.tgz#e644298a9b76ed7a3dfb52fb394e8d92ea64ccf9"
+
+trails-service@^1.0.0-beta-2:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/trails-service/-/trails-service-1.0.0.tgz#e7d8e37193b11ec93b81dfd2e31f6547e2b63704"
 
 trails-service@1.0.0-beta-2:
   version "1.0.0-beta-2"
