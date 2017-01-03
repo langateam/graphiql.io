@@ -52,13 +52,6 @@ amdefine@>=0.0.4:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.0.tgz#fd17474700cb5cc9c2b709f0be9d23ce3c198c33"
 
-ammo@1.x.x:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ammo/-/ammo-1.0.1.tgz#8f8add14cd49bdede3bab3a3e0ebcaf21d03de8b"
-  dependencies:
-    boom "2.x.x"
-    hoek "2.x.x"
-
 ammo@2.x.x:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/ammo/-/ammo-2.0.2.tgz#366c55f7bc4f2f24218ed3a4dd4b8df135c2e6ca"
@@ -936,9 +929,9 @@ boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
-boom@^3.1.1, boom@3.x.x:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/boom/-/boom-3.2.2.tgz#0f0cc5d04adc5003b8c7d71f42cca7271fef0e78"
+boom@^4.2.0, boom@4.x.x:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/boom/-/boom-4.2.0.tgz#c1a74174b11fbba223f6162d4fd8851a1b82a536"
   dependencies:
     hoek "4.x.x"
 
@@ -948,9 +941,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-boom@4.x.x:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/boom/-/boom-4.2.0.tgz#c1a74174b11fbba223f6162d4fd8851a1b82a536"
+boom@3.x.x:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/boom/-/boom-3.2.2.tgz#0f0cc5d04adc5003b8c7d71f42cca7271fef0e78"
   dependencies:
     hoek "4.x.x"
 
@@ -2063,13 +2056,13 @@ growl@1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.9.2.tgz#0ea7743715db8d8de2c5ede1775e1b45ac85c02f"
 
-hapi@^13.3.0:
-  version "13.5.3"
-  resolved "https://registry.yarnpkg.com/hapi/-/hapi-13.5.3.tgz#818b5d9de5e8906bde68ca0bd19a93656413c028"
+hapi@^15.2.0:
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/hapi/-/hapi-15.2.0.tgz#5704ca2c04b6386c03caf9ee901f1de080316d23"
   dependencies:
     accept "2.x.x"
     ammo "2.x.x"
-    boom "3.x.x"
+    boom "4.x.x"
     call "3.x.x"
     catbox "7.x.x"
     catbox-memory "2.x.x"
@@ -2078,13 +2071,12 @@ hapi@^13.3.0:
     hoek "4.x.x"
     iron "4.x.x"
     items "2.x.x"
-    joi "8.x.x"
-    kilt "2.x.x"
+    joi "9.x.x"
     mimos "3.x.x"
-    peekaboo "2.x.x"
+    podium "^1.2.x"
     shot "3.x.x"
-    statehood "4.x.x"
-    subtext "4.x.x"
+    statehood "5.x.x"
+    subtext "^4.3.x"
     topo "2.x.x"
 
 har-validator@~2.0.6:
@@ -2156,7 +2148,7 @@ hoek@3.x.x:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-3.0.4.tgz#268adff66bb6695c69b4789a88b1e0847c3f3123"
 
-hoek@4.x.x:
+hoek@4.1.0, hoek@4.x.x:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.1.0.tgz#4a4557460f69842ed463aa00628cc26d2683afa7"
 
@@ -2222,9 +2214,9 @@ https-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.0.tgz#b3ffdfe734b2a3d4a9efd58e8654c91fce86eafd"
 
-i18next@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-2.5.1.tgz#597c833e4b72b766a089f9b4cd8181df5577127b"
+i18next@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-3.4.1.tgz#104cf9c7220a1ee3e4de8840fc4f40cfb1e28d78"
 
 iconv-lite@~0.4.13:
   version "0.4.13"
@@ -2257,17 +2249,6 @@ indexes-of@^1.0.1:
 indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
-
-inert@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/inert/-/inert-3.2.1.tgz#c4965c5e187cef3db2c42872e52e75700876427d"
-  dependencies:
-    ammo "1.x.x"
-    boom "2.x.x"
-    hoek "2.x.x"
-    items "1.x.x"
-    joi "^6.7.x"
-    lru-cache "2.7.x"
 
 inert@^4.0.2:
   version "4.0.2"
@@ -2476,10 +2457,6 @@ isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
-isemail@1.x.x:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/isemail/-/isemail-1.2.0.tgz#be03df8cc3e29de4d2c5df6501263f1fa4595e9a"
-
 isemail@2.x.x:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
@@ -2500,10 +2477,6 @@ isomorphic-fetch@^2.1.1:
 isstream@~0.1.2, isstream@0.1.x:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
-
-items@1.x.x:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/items/-/items-1.1.1.tgz#435b5dd21bca28b3cfd25bb5c6b278b715010fd9"
 
 items@2.x.x:
   version "2.1.1"
@@ -2526,22 +2499,13 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
-joi@^6.7.x:
-  version "6.10.1"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-6.10.1.tgz#4d50c318079122000fe5f16af1ff8e1917b77e06"
-  dependencies:
-    hoek "2.x.x"
-    isemail "1.x.x"
-    moment "2.x.x"
-    topo "1.x.x"
-
-joi@^8.0.5, joi@^8.1.0, joi@8.x.x:
-  version "8.4.2"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-8.4.2.tgz#bd7774658fe99058d8994ed1d4b9962484ebb859"
+joi@^10.0.1, joi@^10.0.5, joi@10.x.x:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-10.1.0.tgz#8c3a87577c159ffeba129a5054f3238f9efd7159"
   dependencies:
     hoek "4.x.x"
     isemail "2.x.x"
-    moment "2.x.x"
+    items "2.x.x"
     topo "2.x.x"
 
 joi@7.x.x:
@@ -2549,6 +2513,15 @@ joi@7.x.x:
   resolved "https://registry.yarnpkg.com/joi/-/joi-7.3.0.tgz#4d9c9f181830444083665b5b6cd5b8ca6779a5e9"
   dependencies:
     hoek "3.x.x"
+    isemail "2.x.x"
+    moment "2.x.x"
+    topo "2.x.x"
+
+joi@8.x.x:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-8.4.2.tgz#bd7774658fe99058d8994ed1d4b9962484ebb859"
+  dependencies:
+    hoek "4.x.x"
     isemail "2.x.x"
     moment "2.x.x"
     topo "2.x.x"
@@ -2639,12 +2612,6 @@ jsx-ast-utils@^1.3.3:
     acorn-jsx "^3.0.1"
     object-assign "^4.1.0"
 
-kilt@2.x.x:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/kilt/-/kilt-2.0.2.tgz#04d7183c298a1232efddf7ddca5959a8f6301e20"
-  dependencies:
-    hoek "4.x.x"
-
 kind-of@^3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.0.4.tgz#7b8ecf18a4e17f8269d73b501c9f232c96887a74"
@@ -2704,13 +2671,21 @@ lodash.words@^3.0.0:
   dependencies:
     lodash._root "^3.0.0"
 
-lodash@^4.0.0, lodash@^4.12.0, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.2.0, lodash@^4.3.0:
+lodash@^4.0.0, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.2.0, lodash@^4.3.0:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.4.tgz#01ce306b9bad1319f2a5528674f88297aeb70127"
 
 lodash@^4.16.4, lodash@^4.5.1:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
+
+lodash@^4.17.0, lodash@^4.17.2, lodash@^4.6.1:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
+lodash@4.17.2:
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -2732,7 +2707,7 @@ lower-case@^1.1.0, lower-case@^1.1.1, lower-case@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.3.tgz#c92393d976793eee5ba4edb583cf8eae35bd9bfb"
 
-lru-cache@2, lru-cache@2.7.x:
+lru-cache@2:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
 
@@ -3119,10 +3094,6 @@ pbkdf2-compat@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pbkdf2-compat/-/pbkdf2-compat-2.0.1.tgz#b6e0c8fa99494d94e0511575802a59a5c142f288"
 
-peekaboo@2.x.x:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/peekaboo/-/peekaboo-2.0.2.tgz#fc42e139efd698c6ff2870a6b20c047cd9aa29ff"
-
 pez@2.x.x:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/pez/-/pez-2.1.3.tgz#e53ebcbf48961b4aa1bb2b68cfd1eb20c9898039"
@@ -3154,6 +3125,14 @@ pkginfo@0.3.x:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
+
+podium@^1.2.x:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/podium/-/podium-1.2.5.tgz#87c566c2f0365bcf0a1ec7602c4d01948cdd2ad5"
+  dependencies:
+    hoek "4.x.x"
+    items "2.x.x"
+    joi "10.x.x"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -3862,16 +3841,16 @@ stack-trace@0.0.x:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.9.tgz#a8f6eaeca90674c333e7c43953f275b451510695"
 
-statehood@4.x.x:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/statehood/-/statehood-4.1.0.tgz#8a2877d13d9850aab6ce877a54b778df0f43acdb"
+statehood@5.x.x:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/statehood/-/statehood-5.0.1.tgz#fc13c97b37751c18e70513d2b97e896ac8b73005"
   dependencies:
-    boom "3.x.x"
+    boom "4.x.x"
     cryptiles "3.x.x"
     hoek "4.x.x"
     iron "4.x.x"
     items "2.x.x"
-    joi "9.x.x"
+    joi "10.x.x"
 
 stream-browserify@^1.0.0:
   version "1.0.0"
@@ -3927,9 +3906,9 @@ style-loader@^0.13.1:
   dependencies:
     loader-utils "^0.2.7"
 
-subtext@4.x.x:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/subtext/-/subtext-4.2.2.tgz#6251d5c7b3da72d070293c4d798932d881c600eb"
+subtext@^4.3.x:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/subtext/-/subtext-4.3.0.tgz#dfac90492ec35669fd6e00c6e5d938b06d7ccfbb"
   dependencies:
     boom "4.x.x"
     content "3.x.x"
@@ -4058,12 +4037,6 @@ to-iso-string@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/to-iso-string/-/to-iso-string-0.0.2.tgz#4dc19e664dfccbe25bd8db508b00c6da158255d1"
 
-topo@1.x.x:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/topo/-/topo-1.1.0.tgz#e9d751615d1bb87dc865db182fa1ca0a5ef536d5"
-  dependencies:
-    hoek "2.x.x"
-
 topo@2.x.x:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/topo/-/topo-2.0.2.tgz#cd5615752539057c0dc0491a621c3bc6fbe1d182"
@@ -4085,15 +4058,6 @@ trailpack-autoreload@^1.0.2:
     chokidar "^1.4.3"
     trailpack latest
 
-trailpack-core@^1.0.0-beta-3:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/trailpack-core/-/trailpack-core-1.0.1.tgz#b48e6b271e63169d9c55f7befcae8529a149e323"
-  dependencies:
-    i18next "^2.5.1"
-    joi "^8.1.0"
-    lodash "^4.12.0"
-    trailpack "^1.0.2"
-
 trailpack-graphql@^0.9.0:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/trailpack-graphql/-/trailpack-graphql-0.9.1.tgz#f5de0af1358710e64ebdb7e8572e81e3829a1e3a"
@@ -4105,38 +4069,35 @@ trailpack-graphql@^0.9.0:
     trails-model "^1.0.0-beta-2"
     trails-service "^1.0.0-beta-2"
 
-trailpack-hapi@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/trailpack-hapi/-/trailpack-hapi-1.0.4.tgz#c76a6364be3fec9bd26c90e0368712ca548d0233"
+trailpack-hapi@^2:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/trailpack-hapi/-/trailpack-hapi-2.2.0.tgz#82d6b2bea21e6f44d57968da597e27a6519a6ccf"
   dependencies:
-    boom "^3.1.1"
+    boom "^4.2.0"
     good "^7.0.0"
-    hapi "^13.3.0"
-    inert "^3.2.0"
-    joi "^8.0.5"
-    lodash "^4.2.0"
-    trailpack "^1.0.0-beta-1"
-    trailpack-webserver "^1.0.0-alpha-1"
-    trails-controller "^1.0.0-beta-1"
-    trails-policy "^1.0.2"
+    hapi "^15.2.0"
+    inert "^4.0.2"
+    joi "^10.0.1"
+    lodash "^4.17.0"
+    trailpack v2-latest
     vision "^4.0.1"
 
-trailpack-repl@^1.0.0-beta-3:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/trailpack-repl/-/trailpack-repl-1.1.1.tgz#4dd8ca9ec4a01b479ef49751776d4b5019d71014"
+trailpack-repl@^2:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/trailpack-repl/-/trailpack-repl-2.1.0.tgz#5fbf43fd0d076d88550184e12b719322ee78ab73"
   dependencies:
     big-tree-cli "^0.1.6"
     lodash "^4.15.0"
-    trailpack "^1.0.5"
+    trailpack v2-latest
 
-trailpack-router@^1.0.0-beta-4:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/trailpack-router/-/trailpack-router-1.0.8.tgz#c2e8abafe3678a9259510c877b8b6f14c27008b8"
+trailpack-router@^2:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/trailpack-router/-/trailpack-router-2.1.0.tgz#9de436c9e99bf59455afc83a73a1c4cf3ae2ace2"
   dependencies:
     call "^3.0.0"
-    joi "^8.1.0"
-    lodash "^4.12.0"
-    trailpack "^1.0.2"
+    joi "^10.0.5"
+    lodash "^4.6.1"
+    trailpack v2-latest
 
 trailpack-webpack@^1.0.0:
   version "1.0.1"
@@ -4151,42 +4112,59 @@ trailpack-webpack@^1.0.0:
     trailpack "^1.0.2"
     webpack "^1.13.0"
 
-trailpack-webserver@^1.0.0-alpha-1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/trailpack-webserver/-/trailpack-webserver-1.0.2.tgz#b7c86377873d8764b1d5f95915bcf578968a2de3"
-  dependencies:
-    lodash "^4.13.1"
-    trailpack "^1.0.5"
-
-trailpack@^1.0.0-beta-1, trailpack@^1.0.2, trailpack@^1.0.5, trailpack@latest:
+trailpack@^1.0.2, trailpack@latest:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/trailpack/-/trailpack-1.0.5.tgz#d319c804a6413eb6bb813fe3af4088e9604b5eef"
   dependencies:
     lodash "^4.13.1"
 
-trails-controller@^1.0.0-beta-1, trails-controller@^1.0.0-beta-2:
+trailpack@v2-latest:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/trailpack/-/trailpack-2.1.0.tgz#ed36d03417197b4a35cabb2bc2e12a0dca91db0c"
+  dependencies:
+    lodash "^4.17.2"
+
+trails-controller@^1.0.0-beta-2:
   version "1.0.0-beta-2"
   resolved "https://registry.yarnpkg.com/trails-controller/-/trails-controller-1.0.0-beta-2.tgz#1ca51299c771e096e259df37e7fa52f563a52a81"
+
+trails-controller@^2:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/trails-controller/-/trails-controller-2.0.0.tgz#e3cda85f951ca425d5896201305b98423ca4dcff"
 
 trails-model@^1.0.0-beta-2:
   version "1.0.0-beta-2"
   resolved "https://registry.yarnpkg.com/trails-model/-/trails-model-1.0.0-beta-2.tgz#96b30e94c0651ec9ed1851bba6924469d6178192"
 
-trails-policy@^1.0.1, trails-policy@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/trails-policy/-/trails-policy-1.0.2.tgz#e644298a9b76ed7a3dfb52fb394e8d92ea64ccf9"
+trails-model@^2:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/trails-model/-/trails-model-2.0.1.tgz#c44cff8fea9198694af1115257d27dd17a8cdd61"
+
+trails-policy@^2:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/trails-policy/-/trails-policy-2.0.0.tgz#88adb79934829fb814b8a28d1f83579b9a41ac4e"
 
 trails-service@^1.0.0-beta-2:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/trails-service/-/trails-service-1.0.0.tgz#e7d8e37193b11ec93b81dfd2e31f6547e2b63704"
 
-trails-service@1.0.0-beta-2:
-  version "1.0.0-beta-2"
-  resolved "https://registry.yarnpkg.com/trails-service/-/trails-service-1.0.0-beta-2.tgz#679dcd62bf75d59f017246ad8f51d5770500a170"
+trails-service@^2:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/trails-service/-/trails-service-2.0.0.tgz#c37ecff1d91013ad9136fd92e585e91adcd3f019"
 
-trails@^1.0.0-beta-1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/trails/-/trails-1.1.0.tgz#7b6e01536ba3de3c89bb1f573063908b7c93764c"
+trails@^2:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/trails/-/trails-2.0.1.tgz#3ed06df439a554065eb19cf616f1f0519a8a3213"
+  dependencies:
+    hoek "4.1.0"
+    i18next "3.4.1"
+    joi "^10.0.1"
+    lodash "4.17.2"
+    mkdirp "0.5.1"
+    trails-controller "^2"
+    trails-model "^2"
+    trails-policy "^2"
+    trails-service "^2"
 
 tryit@^1.0.1:
   version "1.0.2"
